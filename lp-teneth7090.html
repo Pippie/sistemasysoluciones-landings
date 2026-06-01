@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mesa de Corte Digital Teneth FC7090 | Sistemas y Soluciones Digitales</title>
+<meta name="description" content="Mesa de corte digital Teneth FC7090. Área 700x900mm, precisión ±0,1mm, cámara CCD para corte de contorno. Etiquetas, stickers, vinilo y POP. Soporte técnico en Argentina.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Montserrat',Arial,sans-serif;color:#3a3a3a;line-height:1.6}
+:root{--orange:#FF9B11;--orange-dk:#DF8100;--orange-lt:#FFBC5E;--gray:#505050;--gray-dk:#2e2e2e;--gray-lt:#f5f5f5;--white:#fff;--bdr:#e2e2e2}
+.container{max-width:1100px;margin:0 auto;padding:0 24px}
+.btn-pri{background:var(--orange);color:#fff;padding:16px 32px;border-radius:4px;font-size:1em;font-weight:700;text-decoration:none;display:inline-block;border:none;cursor:pointer;transition:background .2s;font-family:inherit;letter-spacing:.3px}
+.btn-pri:hover{background:var(--orange-dk)}
+.btn-out{background:transparent;color:var(--orange);padding:14px 28px;border-radius:4px;font-size:.97em;font-weight:700;text-decoration:none;display:inline-block;border:2px solid var(--orange);cursor:pointer;transition:all .2s;font-family:inherit}
+.btn-out:hover{background:var(--orange);color:#fff}
+.hdr{background:var(--gray);padding:14px 0;position:sticky;top:0;z-index:100;box-shadow:0 2px 10px rgba(0,0,0,.3)}
+.hdr-inner{display:flex;justify-content:space-between;align-items:center}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none}
+.logo-box{width:38px;height:38px;background:var(--orange);border-radius:9px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.logo-box svg{width:22px;height:22px}
+.logo-name{color:#fff;line-height:1.2}
+.logo-name strong{display:block;font-size:.95em;font-weight:800;letter-spacing:.6px}
+.logo-name span{display:block;font-size:.68em;font-weight:400;opacity:.75;letter-spacing:.5px}
+.hdr-links{display:flex;gap:14px;align-items:center}
+.hdr-tel{color:#fff;text-decoration:none;font-size:.88em;font-weight:500;opacity:.9}
+.hdr-wa{background:#25d366;color:#fff;padding:8px 15px;border-radius:4px;text-decoration:none;font-size:.85em;font-weight:700}
+.hero{background:var(--gray-dk);color:#fff;padding:72px 0 60px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(-45deg,rgba(255,155,17,.07) 0,rgba(255,155,17,.07) 1px,transparent 1px,transparent 18px);pointer-events:none}
+.hero .container{position:relative;z-index:1}
+.hero-grid{display:grid;grid-template-columns:1fr 400px;gap:48px;align-items:center}
+.badge{background:var(--orange);color:#fff;font-size:.72em;font-weight:700;padding:4px 14px;border-radius:20px;display:inline-block;margin-bottom:16px;text-transform:uppercase;letter-spacing:.8px}
+.hero h1{font-size:2.3em;font-weight:800;line-height:1.2;margin-bottom:18px;letter-spacing:-.3px}
+.hero h1 span{color:var(--orange-lt)}
+.hero-sub{font-size:1em;opacity:.85;margin-bottom:12px;font-weight:400;line-height:1.7}
+.hero-img{max-width:100%;max-height:250px;object-fit:contain;display:block;margin:0 0 20px;filter:drop-shadow(0 6px 20px rgba(0,0,0,.4))}
+.kpis{display:flex;gap:24px;margin-bottom:32px;flex-wrap:wrap}
+.kpi-num{font-size:1.75em;font-weight:800;color:var(--orange-lt);display:block}
+.kpi-label{font-size:.7em;opacity:.7;text-transform:uppercase;letter-spacing:.5px;font-weight:500}
+.hfc{background:#fff;border-radius:8px;padding:28px;box-shadow:0 8px 32px rgba(0,0,0,.3)}
+.hfc h3{color:var(--gray);font-size:1.05em;margin-bottom:6px;text-align:center;font-weight:700}
+.hfc p{color:#888;font-size:.83em;text-align:center;margin-bottom:18px}
+.fg{margin-bottom:11px}
+.fg input,.fg select,.fg textarea{width:100%;padding:11px 13px;border:1.5px solid var(--bdr);border-radius:4px;font-size:.88em;color:#333;transition:border-color .2s;font-family:inherit}
+.fg input:focus,.fg select:focus,.fg textarea:focus{outline:none;border-color:var(--orange)}
+.fg textarea{resize:vertical;min-height:80px}
+.fsub{width:100%;background:var(--orange);color:#fff;padding:14px;border:none;border-radius:4px;font-size:.97em;font-weight:700;cursor:pointer;transition:background .2s;font-family:inherit;letter-spacing:.3px}
+.fsub:hover{background:var(--orange-dk)}
+.fpri{font-size:.72em;color:#bbb;text-align:center;margin-top:8px}
+.vstrip{background:var(--orange);padding:20px 0}
+.vstrip-inner{display:flex;justify-content:center;gap:40px;flex-wrap:wrap}
+.vi{color:#fff;display:flex;align-items:center;gap:9px;font-weight:600;font-size:.85em;letter-spacing:.2px}
+section{padding:64px 0}
+.slabel{color:var(--orange);font-size:.75em;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;margin-bottom:8px}
+h2.stitle{font-size:1.8em;font-weight:800;color:var(--gray);margin-bottom:14px;letter-spacing:-.2px}
+.ssub{font-size:.97em;color:#777;margin-bottom:36px}
+.benefits{background:var(--gray-lt)}
+.bgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.bcard{background:#fff;border-radius:8px;padding:28px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,.05);border-top:4px solid var(--orange)}
+.bico{font-size:2em;margin-bottom:14px}
+.bcard h4{color:var(--gray);font-size:.93em;margin-bottom:10px;font-weight:700}
+.bcard p{color:#777;font-size:.85em}
+/* Comparativa */
+.compare{background:var(--white)}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.ccard{border-radius:8px;padding:28px}
+.ccard-bad{background:#fff5f5;border:2px solid #ffb3b3}
+.ccard-good{background:#fff8ed;border:2px solid var(--orange)}
+.ccard h4{font-size:1em;margin-bottom:16px;display:flex;align-items:center;gap:8px;font-weight:700}
+.ccard-bad h4{color:#c0392b}
+.ccard-good h4{color:var(--orange-dk)}
+.clist{list-style:none}
+.clist li{padding:8px 0;border-bottom:1px solid rgba(0,0,0,.06);font-size:.87em;display:flex;gap:10px;align-items:flex-start}
+.specs{background:var(--gray-lt)}
+.sgrid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.stbl{border-collapse:collapse;width:100%}
+.stbl tr{border-bottom:1px solid var(--bdr)}
+.stbl td{padding:10px 0;font-size:.88em}
+.stbl td:first-child{color:#999;width:44%;font-weight:500}
+.stbl td:last-child{color:var(--gray);font-weight:700}
+.alist{list-style:none}
+.alist li{padding:9px 0;border-bottom:1px solid var(--bdr);font-size:.88em;display:flex;align-items:center;gap:10px}
+.alist li::before{content:"✓";color:var(--orange);font-weight:700;font-size:1.05em}
+.diff{background:var(--gray);color:#fff;position:relative;overflow:hidden}
+.diff::before{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(-45deg,rgba(255,155,17,.05) 0,rgba(255,155,17,.05) 1px,transparent 1px,transparent 20px);pointer-events:none}
+.diff .container{position:relative;z-index:1}
+.diff-inner{text-align:center;margin-bottom:44px}
+.diff-inner h2{color:#fff;font-size:1.8em;font-weight:800;margin-bottom:12px}
+.diff-inner p{color:rgba(255,255,255,.75);font-size:.97em}
+.dgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.ditem{text-align:center}
+.dico{font-size:2.2em;margin-bottom:14px}
+.ditem h4{font-size:.92em;margin-bottom:8px;color:var(--orange-lt);font-weight:700}
+.ditem p{font-size:.83em;opacity:.8}
+.ctab{background:var(--gray-lt);text-align:center}
+.ctab h2{color:var(--gray);font-size:1.8em;font-weight:800;margin-bottom:10px}
+.ctab p{color:#777;margin-bottom:24px;font-size:.97em}
+.cta-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.fform{background:#fff}
+.fform-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.fl h2{color:var(--gray);font-size:1.6em;font-weight:800;margin-bottom:12px}
+.fl p{color:#777;margin-bottom:24px;font-size:.93em}
+.cbox{background:var(--gray-lt);border-radius:8px;padding:20px}
+.crow{display:flex;align-items:center;gap:13px;padding:9px 0;border-bottom:1px solid var(--bdr)}
+.crow:last-child{border-bottom:none}
+.crow .ci{font-size:1.2em}
+.crow .cl{font-size:.68em;color:#aaa;font-weight:600;letter-spacing:.5px;text-transform:uppercase}
+.crow .cv{color:var(--gray);font-weight:600;font-size:.88em}
+.crow .cv a{color:var(--gray);text-decoration:none}
+.fright{background:var(--gray-lt);border-radius:8px;padding:28px}
+.fright h3{color:var(--gray);margin-bottom:18px;font-size:1.08em;font-weight:700}
+.frow2{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+.footer{background:var(--gray-dk);color:#fff;padding:28px 0;text-align:center}
+.footer a{color:#888;text-decoration:none}
+.fl-links{display:flex;justify-content:center;gap:20px;margin-top:10px;font-size:.8em}
+@media(max-width:768px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero h1{font-size:1.7em}
+  .kpis{justify-content:center}
+  .bgrid{grid-template-columns:1fr}
+  .sgrid{grid-template-columns:1fr}
+  .dgrid{grid-template-columns:repeat(2,1fr)}
+  .cgrid{grid-template-columns:1fr}
+  .fform-grid{grid-template-columns:1fr}
+  .frow2{grid-template-columns:1fr}
+  .hdr-links{flex-direction:column;gap:6px}
+  .vstrip-inner{gap:16px}
+  .hero-img{max-height:190px;margin:0 auto 18px}
+}
+</style>
+</head>
+<body>
+
+<header class="hdr">
+  <div class="container hdr-inner">
+    <a href="https://www.sistemasysoluciones.com" class="logo">
+      <div class="logo-box">
+        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 14 Q7 7 14 9.5 Q17 10.5 19 7.5 Q16 14.5 10.5 16 Q7 17 4 14Z" fill="white"/>
+          <circle cx="17" cy="8.5" r="1.3" fill="white"/>
+        </svg>
+      </div>
+      <div class="logo-name"><strong>SISTEMAS</strong><span>Y SOLUCIONES</span></div>
+    </a>
+    <div class="hdr-links">
+      <a href="tel:01143425742" class="hdr-tel">&#128222; (011) 4342-5742</a>
+      <a href="https://wa.me/5491127870446?text=Hola%2C%20consulto%20por%20la%20Mesa%20de%20Corte%20Teneth%207090" class="hdr-wa" target="_blank">&#128172; WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <span class="badge">Distribuidor Oficial Teneth en Argentina</span>
+        <h1>Mesa de Corte Digital<br><span>Teneth FC7090</span></h1>
+        <p class="hero-sub">700 &times; 900 mm &middot; Precisi&oacute;n &plusmn;0,1 mm &middot; C&aacute;mara CCD para corte de contorno &middot; Hasta 1000 mm/s &middot; Soporte t&eacute;cnico en Argentina</p>
+        <img src="https://www.sistemasysoluciones.com/images/productos/gallery/teneth-fc-7090-a/resized-500x500/fc7090a-1.png?v=1779311352" alt="Mesa de Corte Digital Teneth FC7090" class="hero-img">
+        <div class="kpis">
+          <div><span class="kpi-num">70&times;90</span><span class="kpi-label">cm &aacute;rea de corte</span></div>
+          <div><span class="kpi-num">&plusmn;0,1</span><span class="kpi-label">mm precisi&oacute;n</span></div>
+          <div><span class="kpi-num">1000</span><span class="kpi-label">mm/s velocidad</span></div>
+          <div><span class="kpi-num">CCD</span><span class="kpi-label">reconocimiento</span></div>
+        </div>
+        <a href="#formulario" class="btn-pri">Quiero una cotizaci&oacute;n</a>
+      </div>
+      <div class="hfc">
+        <h3>Consult&aacute; precio y disponibilidad</h3>
+        <p>Te respondemos en menos de 24&nbsp;hs h&aacute;biles</p>
+        <form action="ACTION_URL_AQUI" method="POST">
+          <div class="fg"><input type="text" name="nombre" placeholder="Tu nombre *" required></div>
+          <div class="fg"><input type="text" name="empresa" placeholder="Empresa *" required></div>
+          <div class="fg"><input type="tel" name="telefono" placeholder="Tel&eacute;fono / WhatsApp *" required></div>
+          <div class="fg"><input type="email" name="email" placeholder="Email"></div>
+          <input type="hidden" name="producto" value="Mesa de Corte Teneth FC7090">
+          <input type="hidden" name="_next" value="https://www.sistemasysoluciones.com/gracias">
+          <button type="submit" class="fsub">Solicitar cotizaci&oacute;n &rarr;</button>
+          <p class="fpri">Tu informaci&oacute;n es confidencial y no se comparte con terceros.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="vstrip">
+  <div class="container vstrip-inner">
+    <div class="vi">&#9989; Distribuidor oficial en Argentina</div>
+    <div class="vi">&#128295; Soporte t&eacute;cnico local</div>
+    <div class="vi">&#128230; Repuestos disponibles en el pa&iacute;s</div>
+    <div class="vi">&#127891; Capacitaci&oacute;n incluida</div>
+  </div>
+</div>
+
+<section class="benefits">
+  <div class="container">
+    <div class="slabel">Automatiz&aacute; tu producci&oacute;n gr&aacute;fica</div>
+    <h2 class="stitle">Corte digital de precisi&oacute;n. Sin troquel. Sin desperdicio.</h2>
+    <p class="ssub">Integrala a tu flujo de impresi&oacute;n y elimin&aacute; el corte manual. M&aacute;s velocidad, menos errores, mayor rentabilidad.</p>
+    <div class="bgrid">
+      <div class="bcard"><div class="bico">&#128247;</div><h4>C&aacute;mara CCD de contorno</h4><p>Lee las marcas de registro impresas y corta exactamente sobre el contorno del dise&ntilde;o. Cero desplazamiento.</p></div>
+      <div class="bcard"><div class="bico">&#127919;</div><h4>Precisi&oacute;n &plusmn;0,1 mm</h4><p>Cada corte en su lugar exacto. Ideal para etiquetas, stickers y piezas donde el margen de error es m&iacute;nimo.</p></div>
+      <div class="bcard"><div class="bico">&#9881;</div><h4>Doble herramienta</h4><p>Corte y hendido en un solo paso. Reducci&oacute;n de tiempos y pasos intermedios en tu flujo de producci&oacute;n.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="compare">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:36px">
+      <div class="slabel">El impacto en tu producci&oacute;n</div>
+      <h2 class="stitle">&iquest;Qu&eacute; cambia cuando automatiz&aacute;s el corte?</h2>
+    </div>
+    <div class="cgrid">
+      <div class="ccard ccard-bad">
+        <h4>&#128940; Sin mesa de corte digital</h4>
+        <ul class="clist">
+          <li><span>&#10060;</span> Corte manual lento y propenso a errores</li>
+          <li><span>&#10060;</span> Alto desperdicio de material por trazos imprecisos</li>
+          <li><span>&#10060;</span> Dependencia de operarios especializados</li>
+          <li><span>&#10060;</span> No escal&aacute;s sin agregar mano de obra</li>
+          <li><span>&#10060;</span> Inconsistencia entre pieza y pieza</li>
+        </ul>
+      </div>
+      <div class="ccard ccard-good">
+        <h4>&#9989; Con Teneth FC7090</h4>
+        <ul class="clist">
+          <li><span style="color:var(--orange);font-weight:700">✓</span> Corte autom&aacute;tico con precisi&oacute;n &plusmn;0,1 mm</li>
+          <li><span style="color:var(--orange);font-weight:700">✓</span> Menos desperdicio, m&aacute;s eficiencia en cada hoja</li>
+          <li><span style="color:var(--orange);font-weight:700">✓</span> El operario configura y supervisa, no corta</li>
+          <li><span style="color:var(--orange);font-weight:700">✓</span> Escal&aacute;s producci&oacute;n sin escalar el equipo humano</li>
+          <li><span style="color:var(--orange);font-weight:700">✓</span> Calidad consistente en cada pieza de la tirada</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="specs">
+  <div class="container">
+    <div class="sgrid">
+      <div>
+        <div class="slabel">Especificaciones t&eacute;cnicas</div>
+        <h2 class="stitle">El equipo en detalle</h2>
+        <table class="stbl">
+          <tr><td>&Aacute;rea de corte</td><td>700 &times; 900 mm</td></tr>
+          <tr><td>Precisi&oacute;n</td><td>&plusmn;0,1 mm</td></tr>
+          <tr><td>Velocidad de corte</td><td>Hasta 1000 mm/s</td></tr>
+          <tr><td>Espesor m&aacute;ximo</td><td>Hasta 1 mm</td></tr>
+          <tr><td>Sistema de registro</td><td>C&aacute;mara CCD</td></tr>
+          <tr><td>Herramientas</td><td>Corte + hendido (doble)</td></tr>
+          <tr><td>Versiones</td><td>Mesa fija (A) / Transportadora (U)</td></tr>
+          <tr><td>Materiales</td><td>Vinilo, papel, etiquetas, POP liviano</td></tr>
+        </table>
+      </div>
+      <div>
+        <div class="slabel">Materiales y aplicaciones</div>
+        <h2 class="stitle">&iquest;Qu&eacute; pod&eacute;s cortar?</h2>
+        <ul class="alist">
+          <li>Etiquetas autoadhesivas</li>
+          <li>Stickers y calcoman&iacute;as</li>
+          <li>Vinilo impreso para comunicaci&oacute;n visual</li>
+          <li>Material POP liviano</li>
+          <li>Packaging de bajo gramaje</li>
+          <li>Muestras y prototipos gr&aacute;ficos</li>
+          <li>Piezas personalizadas en tiradas cortas</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="diff">
+  <div class="container">
+    <div class="diff-inner">
+      <div class="slabel" style="color:var(--orange-lt)">Nuestro diferencial</div>
+      <h2>No compr&aacute;s solo el equipo.<br>Compr&aacute;s respaldo real.</h2>
+      <p>La diferencia entre importar directamente de China y comprarle a quien tiene 40 a&ntilde;os en el mercado argentino.</p>
+    </div>
+    <div class="dgrid">
+      <div class="ditem"><div class="dico">&#128295;</div><h4>Soporte t&eacute;cnico local</h4><p>T&eacute;cnicos especializados en Argentina. Sin depender de respuestas desde el exterior.</p></div>
+      <div class="ditem"><div class="dico">&#128230;</div><h4>Repuestos disponibles</h4><p>Stock en el pa&iacute;s. Tu equipo no para por una pieza que viene de afuera.</p></div>
+      <div class="ditem"><div class="dico">&#127891;</div><h4>Capacitaci&oacute;n incluida</h4><p>Acompa&ntilde;amiento en la puesta en marcha y para tu equipo de trabajo.</p></div>
+      <div class="ditem"><div class="dico">&#127942;</div><h4>40 a&ntilde;os de trayectoria</h4><p>M&aacute;s de cuatro d&eacute;cadas en el mercado argentino de impresi&oacute;n y corte digital.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="ctab">
+  <div class="container">
+    <div class="slabel">Siguiente paso</div>
+    <h2>Ped&iacute; tu cotizaci&oacute;n hoy</h2>
+    <p>Te asesoramos sin compromiso. Analizamos tu flujo de trabajo y te recomendamos la versi&oacute;n ideal para tu volumen.</p>
+    <div class="cta-btns">
+      <a href="#formulario" class="btn-pri">Solicitar cotizaci&oacute;n</a>
+      <a href="https://wa.me/5491127870446?text=Hola%2C%20consulto%20por%20la%20Mesa%20de%20Corte%20Teneth%207090" class="btn-out" target="_blank">Escribir por WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section class="fform" id="formulario">
+  <div class="container">
+    <div class="fform-grid">
+      <div class="fl">
+        <div class="slabel">Contacto</div>
+        <h2>Hablemos de tu producci&oacute;n</h2>
+        <p>Cont&aacute;nos qu&eacute; materiales trabajas y qu&eacute; volumen de corte ten&eacute;s. Un asesor especializado te ayuda a elegir la versi&oacute;n ideal.</p>
+        <div class="cbox">
+          <div class="crow"><span class="ci">&#128205;</span><div><div class="cl">Direcci&oacute;n</div><div class="cv">Av. Belgrano 748, Piso 4, Of. 43 &mdash; CABA</div></div></div>
+          <div class="crow"><span class="ci">&#128222;</span><div><div class="cl">Tel&eacute;fono</div><div class="cv"><a href="tel:01143425742">(011) 4342-5742</a></div></div></div>
+          <div class="crow"><span class="ci">&#128172;</span><div><div class="cl">WhatsApp</div><div class="cv"><a href="https://wa.me/5491127870446" target="_blank">(911) 2787-0446</a></div></div></div>
+          <div class="crow"><span class="ci">&#9993;</span><div><div class="cl">Email</div><div class="cv"><a href="mailto:info@sistemasysoluciones.com">info@sistemasysoluciones.com</a></div></div></div>
+        </div>
+      </div>
+      <div class="fright">
+        <h3>Formulario de consulta &mdash; Teneth FC7090</h3>
+        <form action="ACTION_URL_AQUI" method="POST">
+          <div class="frow2">
+            <div class="fg"><input type="text" name="nombre" placeholder="Nombre completo *" required></div>
+            <div class="fg"><input type="text" name="empresa" placeholder="Empresa *" required></div>
+          </div>
+          <div class="frow2">
+            <div class="fg"><input type="tel" name="telefono" placeholder="Tel&eacute;fono / WhatsApp *" required></div>
+            <div class="fg"><input type="email" name="email" placeholder="Email"></div>
+          </div>
+          <div class="fg">
+            <select name="material">
+              <option value="">&iquest;Qu&eacute; material necesit&aacute;s cortar principalmente?</option>
+              <option value="etiquetas">Etiquetas autoadhesivas</option>
+              <option value="vinilo">Vinilo impreso</option>
+              <option value="stickers">Stickers y calcoman&iacute;as</option>
+              <option value="pop">Material POP</option>
+              <option value="packaging">Packaging</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+          <div class="fg"><textarea name="mensaje" placeholder="&iquest;Cu&aacute;l es tu volumen de producci&oacute;n? &iquest;Ya ten&eacute;s impresora? Cont&aacute;nos m&aacute;s..."></textarea></div>
+          <input type="hidden" name="producto" value="Mesa de Corte Teneth FC7090">
+          <input type="hidden" name="_next" value="https://www.sistemasysoluciones.com/gracias">
+          <button type="submit" class="fsub">Enviar consulta &rarr;</button>
+          <p class="fpri">Tu informaci&oacute;n es confidencial. No compartimos tus datos con terceros.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p style="font-size:1em;font-weight:700;margin-bottom:4px;letter-spacing:.3px">SISTEMAS Y SOLUCIONES DIGITALES SRL</p>
+    <p style="color:#777;font-size:.85em">Av. Belgrano 748, Piso 4, Of. 43 &mdash; CABA &nbsp;|&nbsp; (011) 4342-5742</p>
+    <div class="fl-links">
+      <a href="https://www.sistemasysoluciones.com">Inicio</a>
+      <a href="https://www.sistemasysoluciones.com/somos">Qui&eacute;nes somos</a>
+      <a href="https://www.sistemasysoluciones.com/productos">Productos</a>
+      <a href="#">Pol&iacute;tica de privacidad</a>
+    </div>
+    <p style="color:#555;font-size:.75em;margin-top:14px">&copy; 2025 Sistemas y Soluciones Digitales SRL. Todos los derechos reservados.</p>
+  </div>
+</footer>
+</body>
+</html>
