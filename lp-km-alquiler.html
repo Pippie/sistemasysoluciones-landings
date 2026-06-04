@@ -355,5 +355,32 @@ h2.stitle{font-size:1.8em;font-weight:800;color:var(--gray);margin-bottom:14px;l
     <p style="color:#555;font-size:.75em;margin-top:14px">&copy; 2025 Sistemas y Soluciones Digitales SRL. Todos los derechos reservados.</p>
   </div>
 </footer>
+<script>
+(function(){
+  var labels={nombre:'Nombre',empresa:'Empresa',telefono:'Teléfono',email:'Email',volumen:'Volumen de impresión',modelo_interes:'Modelo de interés',mensaje:'Mensaje',interes:'Interés',material:'Material a cortar'};
+  function getVal(f){
+    if(f.tagName==='SELECT'){var o=f.options[f.selectedIndex];return o&&o.value?o.text:'';}
+    return f.value.trim();
+  }
+  function onSubmit(e){
+    e.preventDefault();
+    var form=e.target;
+    var prod=form.querySelector('[name="producto"]');
+    var lines=['🖨️ *Consulta desde web*'];
+    if(prod&&prod.value)lines.push('*Producto:* '+prod.value);
+    lines.push('---');
+    form.querySelectorAll('input:not([type="hidden"]):not([type="submit"]),select,textarea').forEach(function(f){
+      var v=getVal(f);if(!v)return;
+      var k=f.getAttribute('name')||'';
+      lines.push('*'+(labels[k]||k)+':* '+v);
+    });
+    window.open('https://wa.me/5491127870446?text='+encodeURIComponent(lines.join('\n')),'_blank');
+  }
+  document.querySelectorAll('form').forEach(function(form){
+    form.setAttribute('action','#');
+    form.addEventListener('submit',onSubmit);
+  });
+})();
+</script>
 </body>
 </html>
